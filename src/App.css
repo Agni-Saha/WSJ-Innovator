@@ -70,6 +70,7 @@
     overflow: hidden;
     background-color: white;
     z-index: 100;
+    border-top: 1px solid #000;
 }
 
 .wrapper {
@@ -86,7 +87,7 @@
 
 .marquee p {
     display: inline-block;
-    padding: 0.8rem;
+    padding: 1rem 0 0.8rem 0;
     font-family: 'Blair ITC Std';
     text-transform: lowercase;
     font-size: 0.7rem;
@@ -139,22 +140,6 @@
     z-index: 0;
 }
 
-.scroll_down_icon {
-    position: fixed;
-    left: 50%;
-    bottom: 12%;
-    z-index: 0;
-}
-
-.full_body {
-    position: absolute;
-    color: white;
-    background-color: black;
-    padding: 3rem;
-    top: 90.7%;
-    z-index: 100;
-}
-
 .video_button svg {
     position: fixed;
     pointer-events: none;
@@ -168,11 +153,28 @@
     transition: display 0s ease-out, opacity 0s ease-out;
 }
 
+.scroll_down_icon {
+    position: fixed;
+    left: 50%;
+    bottom: 12%;
+    z-index: 0;
+}
+
+.full_body {
+    position: absolute;
+    color: white;
+    background-color: black;
+    /* padding: 3rem; */
+    top: 90.7%;
+    z-index: 100;
+}
+
 .editor_wrapper {
     padding-top: 6rem;
     padding-left: 10rem;
     padding-bottom: 13.6rem;
     width: 65%;
+    background-color: black;
 }
 
 .editor_wrapper .editor_letter_inner {
@@ -203,6 +205,39 @@
     width: 200px;
 }
 
-.innovation_cursor {
+.sliding_banner {
     background-color: white;
+    color: black;
+    padding: 4rem 0 8rem;
+    position: relative;
+}
+
+.sliding_banner .sliding_text_container {
+    font-size: 10rem;
+    text-transform: uppercase;
+    font-family: 'Chronicle Display';
+    letter-spacing: -10px;
+    padding: 0.5rem 4rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.sliding_banner .sliding_text_container.right {
+    text-align: right;
+    border-top: 0;
+}
+
+.sliding_banner .gallery_middle {
+    font-family: 'Blair ITC Std';
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.8rem 4rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -126%);
+    z-index: 10;
+    background-color: white;
+    cursor: pointer;
 }

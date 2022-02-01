@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import video from "../assets/2021_WSJ_Innovators_trim.mp4"
 import signature from "../assets/signature-editor-in-chief.png"
+import gsap from "gsap"
 
 function Body() {
 
@@ -27,6 +28,32 @@ function Body() {
             cursor.style.display = "none"
             cursor.style.opacity = "0"
         })
+
+        let scrolled
+
+        let tweenLeft = gsap.from(".sliding_banner .sliding_text_container.left div", {
+            duration: 2,
+            x: -1280,
+            ease: "expo.inOut"
+        },)
+        let tweenRight = gsap.from(".sliding_banner .sliding_text_container.right div", {
+            duration: 2,
+            x: 1280,
+            ease: "expo.inOut",
+            delay: 0.5
+        })
+
+        tweenLeft.pause()
+        tweenRight.pause()
+
+        window.addEventListener("scroll", () => {
+            scrolled = document.querySelector(".sliding_banner").getBoundingClientRect()
+            if (scrolled.top <= 410) {
+                tweenLeft.play()
+                tweenRight.play()
+            }
+        })
+
     }, [])
 
     return (
@@ -49,7 +76,7 @@ function Body() {
             </div>
 
             <div className="full_body">
-                <div className="editor_wrapper">
+                <section className="editor_wrapper">
                     <div className="editor_letter_inner">
                         <p>
                             Launched in 2011, <em>WSJ. Magazine{"'"}s</em> Innovator
@@ -81,10 +108,18 @@ function Body() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="innovation_cursor">
-
-                </div>
+                </section>
+                <section className="sliding_banner">
+                    <div className="sliding_text_container left">
+                        <div>Celebrating</div>
+                    </div>
+                    <div className="sliding_text_container right">
+                        <div>Innovation</div>
+                    </div>
+                    <div className='gallery_middle'>
+                        View Gallery
+                    </div>
+                </section>
             </div>
         </div>
     );
