@@ -87,7 +87,7 @@
 
 .marquee p {
     display: inline-block;
-    padding: 1rem 0 0.8rem 0;
+    padding: 1rem 1.6rem 0.8rem 0;
     font-family: 'Blair ITC Std';
     text-transform: lowercase;
     font-size: 0.7rem;
@@ -208,7 +208,7 @@
 .sliding_banner {
     background-color: white;
     color: black;
-    padding: 4rem 0 8rem;
+    padding: 4rem 0 0 0;
     position: relative;
 }
 
@@ -236,8 +236,136 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -126%);
+    transform: translate(-50%, -10%);
     z-index: 10;
     background-color: white;
     cursor: pointer;
+}
+
+.img_banner {
+    background-color: white;
+    color: #000;
+    /* padding-bottom: 6rem; */
+    padding-top: 4rem;
+    position: relative;
+}
+
+.img_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img_container img {
+    object-fit: contain;
+    width: 800px;
+}
+
+.img_container .left_img {
+    right: 6rem;
+    position: relative;
+}
+
+.img_container .right_img {
+    left: 4rem;
+    position: relative;
+}
+
+.img_banner .honoree_text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 24%;
+    text-align: center;
+}
+
+.img_banner .honoree_text h1 {
+    font-family: 'Chronicle Display';
+    font-size: 3.6rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 1.4rem;
+}
+
+.img_banner .honoree_text .honoree_paragraph {
+    font-family: 'Chronicle Display';
+    font-weight: 100;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.img_banner .honoree_text .honoree_span {
+    font-family: 'Blair ITC Std';
+    text-transform: lowercase;
+    word-spacing: 2px;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.4rem;
+    cursor: pointer;
+}
+
+.article_section {
+    padding-bottom: 8rem;
+}
+
+.article_section .articles {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: #000;
+    padding-bottom: 3.2rem;
+}
+
+.article_section .articles .article_img {
+    flex: 60%;
+}
+
+.article_section .articles .article_img img {
+    object-fit: contain;
+    width: 57rem;
+}
+
+.article_section .articles .article_text {
+    flex: 30%;
+    padding: 0 1rem 0 7rem;
+}
+
+.article_section .articles .article_text.order2 {
+    padding: 0 7rem 0 4rem;
+}
+
+.article_section .articles .article_text img {
+    width: 80%;
+}
+
+.article_section .articles .article_text .article_heading {
+    font-family: 'Chronicle Display';
+    width: 100;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    padding-top: 2rem;
+}
+
+.article_section .articles .article_text .article_subheading {
+    font-family: 'Blair ITC Std';
+    text-transform: lowercase;
+    font-size: 0.8rem;
+    padding-top: 1.6rem;
+}
+
+.article_section .articles .article_text .article_details {
+    font-family: 'Chronicle Display';
+    width: 100;
+    font-size: 0.8rem;
+    line-height: 1.8;
+    width: 80%;
+}
+
+.order1 {
+    order: 1;
+}
+
+.order2 {
+    order: 2;
 }

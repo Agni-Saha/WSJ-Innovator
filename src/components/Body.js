@@ -1,7 +1,12 @@
 import React, { useEffect } from 'react';
+import gsap from "gsap"
+
 import video from "../assets/2021_WSJ_Innovators_trim.mp4"
 import signature from "../assets/signature-editor-in-chief.png"
-import gsap from "gsap"
+import left_img from "../assets/left_img.png"
+import right_img from "../assets/right_img.png"
+
+import Articles from './Articles';
 
 function Body() {
 
@@ -35,7 +40,7 @@ function Body() {
             duration: 2,
             x: -1280,
             ease: "expo.inOut"
-        },)
+        })
         let tweenRight = gsap.from(".sliding_banner .sliding_text_container.right div", {
             duration: 2,
             x: 1280,
@@ -109,6 +114,7 @@ function Body() {
                         </div>
                     </div>
                 </section>
+
                 <section className="sliding_banner">
                     <div className="sliding_text_container left">
                         <div>Celebrating</div>
@@ -120,6 +126,32 @@ function Body() {
                         View Gallery
                     </div>
                 </section>
+
+                <section className='img_banner'>
+                    <div className="img_container">
+                        <img className='left_img' src={left_img} alt="" />
+                        <img className='right_img' src={right_img} alt="" />
+                    </div>
+                    <div className="honoree_text">
+                        <h1>
+                            ALL WSJ. INNOVATORS
+                        </h1>
+                        <p className='honoree_paragraph'>
+                            From architects and artists to philanthropists, designers
+                            and entertainers, WSJ. Innovators have been sharing their
+                            inspiring stories since 2011.
+                        </p>
+                        <span className='honoree_span'>
+                            View All honorees
+                        </span>
+                    </div>
+                </section>
+
+                <Articles />
+
+                <footer className='body_footer'>
+
+                </footer>
             </div>
         </div>
     );

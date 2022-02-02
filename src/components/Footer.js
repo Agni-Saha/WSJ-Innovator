@@ -23,7 +23,7 @@ function Footer() {
                     <p className='hover_underline'> Sports </p>
                     <p className='hover_underline'> Technology </p>
                     <p className='hover_underline'> Television </p>
-                    <p className='hover_underline'> Acting & Activism </p>
+                    <p className='hover_underline'> Acting {"&"} Activism </p>
                     <p className='hover_underline'> Architechture </p>
                     <p className='hover_underline'> Art </p>
                     <p className='hover_underline'> Brand </p>
