@@ -13,3 +13,6 @@
 
 ## Things that I wanted to add but couldn't...
 The same problem with Broadwick Live clone that I made, I dunno how to do smooth scroll with GSAP, and if I use any other known way (like using CSS or any external packages), then the whole CSS breaks down. If anyone has any solution regarding this, please tell me.
+
+
+### Otherwise, nothing much actually. This was more of a designing challenge than a developing one. And since this is a clone, so I didn't have to do much designing. \ Anyway I learned something new, that's enough for me...
