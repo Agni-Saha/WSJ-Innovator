@@ -387,6 +387,10 @@
     order: 2;
 }
 
+/*------------------------------------------------------------------
+--------------------------Footer Section---------------------------
+------------------------------------------------------------------*/
+
 .body_footer {
     background-color: white;
 }
@@ -477,4 +481,39 @@
     font-family: 'Blair ITC Std';
     font-size: 0.6rem;
     letter-spacing: 1px;
+}
+
+/*------------------------------------------------------------------
+--------------------------Loading Section---------------------------
+------------------------------------------------------------------*/
+
+.loading_container {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.loading {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.loading svg {
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+}
+
+.wipe {
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+}
+
+.App_Container {
+    display: none;
 }
