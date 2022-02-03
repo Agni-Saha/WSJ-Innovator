@@ -6,6 +6,16 @@ import signature from "../assets/signature-editor-in-chief.png"
 import left_img from "../assets/left_img.png"
 import right_img from "../assets/right_img.png"
 
+import FirstHeading from "../assets/1st_heading_white.png"
+import SecondHeading from "../assets/2nd_heading_white.png"
+import ThirdHeading from "../assets/3rd_heading_white.png"
+import FourthHeading from "../assets/4th_heading_white.png"
+import EndingFooter from "../assets/ending_footer.png"
+
+import FbIcon from "../assets/fb_icon.svg"
+import InstaIcon from "../assets/insta_icon.svg"
+import TwitterIcon from "../assets/twitter_icon.svg"
+
 import Articles from './Articles';
 
 function Body() {
@@ -150,7 +160,45 @@ function Body() {
                 <Articles />
 
                 <footer className='body_footer'>
+                    <section className="sponsor_section">
+                        <div className='sponsor_tagline'>
+                            presenting sponsors
+                        </div>
+                        <div className="sponsor_img_container">
+                            <img src={FirstHeading} alt="" />
+                            <img src={SecondHeading} alt="" />
+                            <img src={ThirdHeading} alt="" />
+                        </div>
+                        <div className='sponsor_tagline'>
+                            participating sponsor
+                        </div>
+                        <div className="sponsor_img_container">
+                            <img src={FourthHeading} alt="" />
+                        </div>
+                    </section>
 
+                    <section className="ending_footer">
+                        <div className="ending_img">
+                            <img src={EndingFooter} alt="" />
+                        </div>
+                        <div className="legal_section">
+                            <div className="hashtag">
+                                #WSJINNOVATORS
+                            </div>
+                            <div className="social_icons">
+                                <img src={FbIcon} alt="" />
+                                <img src={InstaIcon} alt="" />
+                                <img src={TwitterIcon} alt="" />
+                            </div>
+                            <div className="legal_links">
+                                <span>cookie notice</span> |
+                                <span>privacy notice</span>
+                            </div>
+                            <div className="copyrights">
+                                © 2021 dow jones {"&"} company, inc. all rights reserved.
+                            </div>
+                        </div>
+                    </section>
                 </footer>
             </div>
         </div>
