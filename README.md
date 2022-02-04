@@ -12,7 +12,8 @@
 2. Adjusting the SVGs, as I wanted to make it as close to the original as possible.
 
 ## Things that I wanted to add but couldn't...
-The same problem with Broadwick Live clone that I made, I dunno how to do smooth scroll with GSAP, and if I use any other known way (like using CSS or any external packages), then the whole CSS breaks down. If anyone has any solution regarding this, please tell me.
+1. The same problem with Broadwick Live clone that I made, I dunno how to do smooth scroll with GSAP, and if I use any other known way (like using CSS or any external packages), then the whole CSS breaks down. If anyone has any solution regarding this, please tell me.
+2. I also wanted to make it responsive, and since I didn't use anything except GSAP so I thought it would be easier. But SVG animations are a little bit tricky, and since my goal here was to just see if I can develop this, so I probably won't be doing this.
 
 
 #### Otherwise, nothing much actually. This was more of a designing challenge than a developing one. And since this is a clone, so I didn't have to do much designing. Anyway I learned something new, that's enough for me...
