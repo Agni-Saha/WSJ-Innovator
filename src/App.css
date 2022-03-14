@@ -140,6 +140,13 @@
     z-index: 0;
 }
 
+.video_button {
+    position: fixed;
+    left: 1%;
+    bottom: 25%;
+    z-index: 200;
+}
+
 .video_button svg {
     position: fixed;
     pointer-events: none;
